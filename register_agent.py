@@ -284,11 +284,11 @@ if __name__ == "__main__":
     wait_time = os.environ.get("WAZUH_WAIT_TIME", default="10")
     flask_bind = os.environ.get("FLASK_BIND", default="0.0.0.0")
     if not node_name:
-        node_name = os.environ.get("HOSTNAME")
+        node_name = os.environ.get("10.0.0.6")
     login_endpoint = "security/user/authenticate"
-    base_url = f"{protocol}://{host}:{port}"
-    login_url = f"{protocol}://{host}:{port}/{login_endpoint}"
-    auth = f"{user}:{password}".encode()
+    base_url = f"{tcp}://{10.0.0.6}:{1514}"
+    login_url = f"{tcp}://{10.0.0.6}:{1514}/{security/user/authenticate}"
+    auth = f"{azureuser}:{hIj16QDSTNRfUXpLM8?GW3Ea5bT.+y9Z}".encode()
     verify = False
     create_config_file()
     agent_id, agent_key = add_agent(node_name)
